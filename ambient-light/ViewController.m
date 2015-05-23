@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
     // NOTE
-    // Set your Mapbox Access Token via the Storyboard, in the Attributes Inspector panel for Map View
+    // Set your Mapbox Access Token in AppDelegate.m
     
     // set the map to show and follow the user's location (initially)
     self.mapView.userTrackingMode = MGLUserTrackingModeFollow;

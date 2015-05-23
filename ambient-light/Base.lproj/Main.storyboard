@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsn-4o-vdt" customClass="MGLMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-UD-2g5">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-UD-2g5">
                                         <rect key="frame" x="8" y="478" width="584" height="78"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w76-J7-pnY">
@@ -61,9 +61,6 @@
                                     <constraint firstItem="SWw-UD-2g5" firstAttribute="trailing" secondItem="Tsn-4o-vdt" secondAttribute="trailingMargin" id="WcY-EG-p1j"/>
                                     <constraint firstAttribute="bottom" secondItem="SWw-UD-2g5" secondAttribute="bottom" constant="44" id="oCu-1W-N7D"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessToken" value=""/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

@@ -14,8 +14,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // NOTE
-    // Set your Mapbox Access Token via the Storyboard, in the Attributes Inspector panel for Map View
+    // Setting the Mapbox access token can happen in one of several places:
+    //   * AppDelegate (here)
+    //   * Info.plist via the `MGLMapboxAccessToken` key
+    
+    [MGLAccountManager setAccessToken:@"<mapbox-access-token-here>"];
 
     return YES;
 }
