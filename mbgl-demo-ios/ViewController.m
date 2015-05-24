@@ -69,7 +69,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (IBAction)thresholdSlider:(UISlider *)sender
+- (IBAction)thresholdSliderChanged:(UISlider *)sender
 {
     self.switchingThreshold = sender.value;
     [self updateMapStyleForScreenBrightness];
