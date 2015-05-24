@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,26 +21,46 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsn-4o-vdt" customClass="MGLMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w76-J7-pnY">
-                                        <rect key="frame" x="184" y="536" width="232" height="31"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-UD-2g5">
+                                        <rect key="frame" x="8" y="478" width="584" height="78"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w76-J7-pnY">
+                                                <rect key="frame" x="56" y="24" width="472" height="31"/>
+                                                <color key="minimumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="thresholdSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Yr-R2-8EB"/>
+                                                </connections>
+                                            </slider>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dark" translatesAutoresizingMaskIntoConstraints="NO" id="B9B-7x-rax">
+                                                <rect key="frame" x="0.0" y="14" width="50" height="50"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Light" translatesAutoresizingMaskIntoConstraints="NO" id="2cc-vz-rZn">
+                                                <rect key="frame" x="534" y="14" width="50" height="50"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="228" id="xwj-HW-cTX"/>
+                                            <constraint firstItem="w76-J7-pnY" firstAttribute="centerY" secondItem="B9B-7x-rax" secondAttribute="centerY" id="C4i-Oo-ILn"/>
+                                            <constraint firstItem="w76-J7-pnY" firstAttribute="leading" secondItem="B9B-7x-rax" secondAttribute="trailing" constant="8" symbolic="YES" id="HH4-7L-Y3X"/>
+                                            <constraint firstItem="w76-J7-pnY" firstAttribute="centerX" secondItem="SWw-UD-2g5" secondAttribute="centerX" id="IR9-L0-rct"/>
+                                            <constraint firstItem="B9B-7x-rax" firstAttribute="centerY" secondItem="SWw-UD-2g5" secondAttribute="centerY" id="Q2v-su-Pti"/>
+                                            <constraint firstItem="2cc-vz-rZn" firstAttribute="top" secondItem="B9B-7x-rax" secondAttribute="top" id="jcl-Ar-xF8"/>
+                                            <constraint firstAttribute="trailing" secondItem="2cc-vz-rZn" secondAttribute="trailing" id="pHh-r6-uYL"/>
+                                            <constraint firstItem="2cc-vz-rZn" firstAttribute="leading" secondItem="w76-J7-pnY" secondAttribute="trailing" constant="8" symbolic="YES" id="pgW-rl-cNl"/>
+                                            <constraint firstItem="B9B-7x-rax" firstAttribute="top" secondItem="SWw-UD-2g5" secondAttribute="top" constant="14" id="xaW-J7-zuW"/>
                                         </constraints>
-                                        <color key="minimumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <action selector="thresholdSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Yr-R2-8EB"/>
-                                        </connections>
-                                    </slider>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="w76-J7-pnY" firstAttribute="centerX" secondItem="Tsn-4o-vdt" secondAttribute="centerX" id="pIS-tB-Sy5"/>
-                                    <constraint firstAttribute="bottom" secondItem="w76-J7-pnY" secondAttribute="bottom" constant="34" id="t7I-ax-clZ"/>
+                                    <constraint firstItem="SWw-UD-2g5" firstAttribute="leading" secondItem="Tsn-4o-vdt" secondAttribute="leadingMargin" id="PMc-ve-dCJ"/>
+                                    <constraint firstItem="SWw-UD-2g5" firstAttribute="trailing" secondItem="Tsn-4o-vdt" secondAttribute="trailingMargin" id="WcY-EG-p1j"/>
+                                    <constraint firstAttribute="bottom" secondItem="SWw-UD-2g5" secondAttribute="bottom" constant="44" id="oCu-1W-N7D"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="accessToken" value="pk.eyJ1IjoiZnJpZWRidW5ueSIsImEiOiJUbFBmei1zIn0.lZVQjkwWlc07RS4oEQITqg"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -59,5 +80,8 @@
             </objects>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.23137254900000001" green="0.69803921570000005" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="Dark" width="50" height="50"/>
+        <image name="Light" width="50" height="50"/>
+    </resources>
 </document>

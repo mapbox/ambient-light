@@ -59,6 +59,9 @@
                                              selector:@selector(updateMapStyleForScreenBrightness)
                                                  name:UIApplicationDidBecomeActiveNotification
                                                object:nil];
+    
+    // set tint to dark grey, for ambiance
+    [[UIView appearance] setTintColor:[UIColor colorWithWhite:0.5f alpha:1]];
 }
 
 - (void)dealloc
