@@ -1,20 +1,34 @@
-# Mapbox GL for iOS Demo/Template
+# Ambient Light Mapbox GL iOS Demo
 
-A [Mapbox GL for iOS](https://github.com/mapbox/mapbox-gl-native) demo/template app to help developers get started with minimal effort.
+A [Mapbox GL for iOS](https://github.com/mapbox/mapbox-gl-native) demo app that demonstrates ambient light-based map styling.
 
-![Would be nice to live in London, wouldn't it.](https://cloud.githubusercontent.com/assets/1198851/7786397/b7b2cf6c-0180-11e5-88cd-58647bbe3591.png)
+![Would be nice to live in London, wouldn't it.](https://cloud.githubusercontent.com/assets/1198851/7789421/78569c38-0214-11e5-8cc7-9891b7507a5a.png)
 
 ## Getting started
 
-1.  Clone or [download](https://github.com/friedbunny/mbgl-ios-demo/archive/master.zip) this repository
+1.  Clone or [download](https://github.com/friedbunny/ambient-light/archive/master.zip) this repository
 1. Run `pod install` to download the Mapbox GL library via [Cocoapods](https://cocoapods.org)
-1. Open `mbgl-ios-demo.xcworkspace` in Xcode
-1. Insert your [Mapbox access token](https://www.mapbox.com/developers/api/#access-tokens) into Map View’s Attributes Inspector panel in Interface Builder: ![Interface Builder has lots of names for things that you'll never know about](https://cloud.githubusercontent.com/assets/1198851/7786331/4b227e8e-017a-11e5-9b27-bf3428cef7e9.png)
+1. Open `ambient-light.xcworkspace` in Xcode
+1. Insert your [Mapbox access token](https://www.mapbox.com/developers/api/#access-tokens) into Map View’s Attributes Inspector panel in Interface Builder: ![Interface Builder has lots of names for things that you'll never know about](https://cloud.githubusercontent.com/assets/1198851/7789419/5e5c002a-0214-11e5-8315-6617fb3d47c5.png)
 1. Build amazing cartographic things
 
-## Don’t like storyboards?
+## Detecting ambient light
 
-This demo/template uses storyboards, but you don’t have to: [here’s an example of programmatic instantiation](https://github.com/mapbox/mapbox-gl-native/blob/b7b4515d4883f7da1fdcfb4d5aff7a2f3118ae86/ios/app/MBXViewController.mm#L55-L59) from the official demo app.
+This is a bit of a lie: Apple does not expose any direct ambient light sensing API to developers, so **this demo uses screen brightness as a proxy**.
+
+This relies on the user having auto brightness enabled, which isn’t always a given (and there’s no easy way to detect if that’s on, either).
+
+Generally this technique works well and is the same that’s used in [Tweetbot](http://tapbots.com/tweetbot/).
+
+## How the UI works
+
+The slider controls the screen brightness threshold at which the map will change styles — e.g., farther left will switch to the dark style at a lower screen brightness. 
+
+My preferred threshold is about 35%, or somewhat left of center.
+
+## Does not work in simulator
+
+This does not really work in the simulator as brightness is hardcoded to 50%, but you can still drag the slider to change styles.
 
 ## Need help?
 
