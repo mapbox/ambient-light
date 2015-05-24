@@ -109,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96992E751B111DF9008978C0 /* mbgl-demo-ios */ = {
+		96992E751B111DF9008978C0 /* Ambient Light */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96992E991B111DF9008978C0 /* Build configuration list for PBXNativeTarget "mbgl-demo-ios" */;
+			buildConfigurationList = 96992E991B111DF9008978C0 /* Build configuration list for PBXNativeTarget "Ambient Light" */;
 			buildPhases = (
 				FAABC7B93C6391779EE38DCC /* Check Pods Manifest.lock */,
 				96992E721B111DF9008978C0 /* Sources */,
@@ -124,7 +124,7 @@
 			);
 			dependencies = (
 			);
-			name = "mbgl-demo-ios";
+			name = "Ambient Light";
 			productName = "mbgl-demo-ios";
 			productReference = 96992E761B111DF9008978C0 /* mbgl-demo-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -156,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96992E751B111DF9008978C0 /* mbgl-demo-ios */,
+				96992E751B111DF9008978C0 /* Ambient Light */,
 			);
 		};
 /* End PBXProject section */
@@ -366,7 +366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96992E991B111DF9008978C0 /* Build configuration list for PBXNativeTarget "mbgl-demo-ios" */ = {
+		96992E991B111DF9008978C0 /* Build configuration list for PBXNativeTarget "Ambient Light" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96992E9A1B111DF9008978C0 /* Debug */,
