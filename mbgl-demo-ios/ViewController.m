@@ -46,22 +46,32 @@
     
     [self updateMapStyleForScreenBrightness];
     
-    // Because Apple doesn't provide any API access to the actual ambient light sensor,
-    // we have to use screen brightness as a proxy. Clearly this only works if the user
-    // has auto-brightness enabled.
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(updateMapStyleForScreenBrightness)
-                                                 name:UIScreenBrightnessDidChangeNotification
-                                               object:nil];
-    
-    // update style when app returns to being active
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(updateMapStyleForScreenBrightness)
-                                                 name:UIApplicationDidBecomeActiveNotification
-                                               object:nil];
-    
     // set tint to dark grey, for ambiance
     [[UIView appearance] setTintColor:[UIColor colorWithWhite:0.5f alpha:1]];
+}
+
+- (instancetype)init
+{
+    self = [super init];
+
+    if (self)
+    {
+        // Because Apple doesn't provide any API access to the actual ambient light sensor,
+        // we have to use screen brightness as a proxy. Clearly this only works if the user
+        // has auto-brightness enabled.
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(updateMapStyleForScreenBrightness)
+                                                     name:UIScreenBrightnessDidChangeNotification
+                                                   object:nil];
+
+        // update style when app returns to being active
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(updateMapStyleForScreenBrightness)
+                                                     name:UIApplicationDidBecomeActiveNotification
+                                                   object:nil];
+    }
+
+    return self;
 }
 
 - (void)dealloc
