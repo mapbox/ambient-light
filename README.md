@@ -28,6 +28,8 @@ My preferred threshold is about 35%, or somewhat left of center.
 
 Current brightness is indicated by a vertical line on top of the slider bar.
 
+![Annoying gif demo](https://cloud.githubusercontent.com/assets/1198851/7792704/71965206-026b-11e5-8388-5e2d0a6cb5f3.gif)
+
 ## Does not work in simulator
 
 This does not really work in the simulator as brightness is hardcoded to 50%, but you can still drag the slider to change styles.
