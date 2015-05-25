@@ -2,7 +2,7 @@
 
 A [Mapbox GL for iOS](https://github.com/mapbox/mapbox-gl-native) demo app that demonstrates ambient light-based map styling.
 
-![Would be nice to live in London, wouldn't it.](https://cloud.githubusercontent.com/assets/1198851/7789421/78569c38-0214-11e5-8cc7-9891b7507a5a.png)
+![Would be nice to live in London, wouldn't it.](https://cloud.githubusercontent.com/assets/1198851/7792257/631d2a12-0264-11e5-82c8-0d8a942adaf8.png)
 
 ## Getting started
 
@@ -22,9 +22,11 @@ Generally this technique works well and is the same that’s used in [Tweetbot](
 
 ## How the UI works
 
-The slider controls the screen brightness threshold at which the map will change styles — e.g., farther left will switch to the dark style at a lower screen brightness. 
+The slider controls the screen brightness threshold at which the map will change styles — e.g., farther left will switch to the dark style at a lower screen brightness.
 
 My preferred threshold is about 35%, or somewhat left of center.
+
+Current brightness is indicated by a vertical line on top of the slider bar.
 
 ## Does not work in simulator
 
