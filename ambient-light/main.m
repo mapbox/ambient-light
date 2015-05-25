@@ -1,6 +1,6 @@
 //
 //  main.m
-//  mbgl-demo-ios
+//  ambient-light
 //
 //  Created by Jason Wray on 5/23/15.
 //  Copyright (c) 2015 Mapbox. All rights reserved.
