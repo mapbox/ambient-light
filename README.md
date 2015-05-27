@@ -9,7 +9,7 @@ A [Mapbox GL for iOS](https://github.com/mapbox/mapbox-gl-native) demo app that 
 1.  Clone or [download](https://github.com/friedbunny/ambient-light/archive/master.zip) this repository
 1. Run `pod install` to download the Mapbox GL library via [Cocoapods](https://cocoapods.org)
 1. Open `ambient-light.xcworkspace` in Xcode
-1. Insert your [Mapbox access token](https://www.mapbox.com/developers/api/#access-tokens) into Map View’s Attributes Inspector panel in Interface Builder: ![Interface Builder has lots of names for things that you'll never know about](https://cloud.githubusercontent.com/assets/1198851/7789419/5e5c002a-0214-11e5-8315-6617fb3d47c5.png)
+1. Insert your [Mapbox access token](https://www.mapbox.com/developers/api/#access-tokens) in [`AppDelegate.m`](https://github.com/friedbunny/ambient-light/blob/bc26fe94c05968c33eb5926c3b9148516ebebf96/ambient-light/AppDelegate.m#L21)
 1. Build amazing cartographic things
 
 ## Detecting ambient light
