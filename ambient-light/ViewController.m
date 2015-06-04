@@ -10,7 +10,7 @@
 
 #import <MapboxGL/MapboxGL.h>
 
-@interface ViewController () <MGLMapViewDelegate>
+@interface ViewController ()
 
 @property (nonatomic) IBOutlet MGLMapView *mapView;
 
@@ -33,10 +33,6 @@
     
     // set the map to show and follow the user's location (initially)
     self.mapView.userTrackingMode = MGLUserTrackingModeFollow;
-    
-    // hooks up the delegate, not used or necessary here (but a convenient example)
-    self.mapView.delegate = self;
-    
 
     // ambient light map switching
     //
