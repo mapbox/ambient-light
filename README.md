@@ -24,7 +24,7 @@ Generally this technique works well and is the same that’s used in [Tweetbot](
 
 The slider controls the screen brightness threshold at which the map will change styles — e.g., farther left will switch to the dark style at a lower screen brightness.
 
-My preferred threshold is about 35%, or somewhat left of center.
+A reasonable threshold is about 35%, or somewhat left of center.
 
 Current brightness is indicated by a vertical line on top of the slider bar.
 
