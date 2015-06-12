@@ -10,6 +10,12 @@
 
 #import <MapboxGL/MapboxGL.h>
 
+@interface MGLMapView ()
+
+- (void)setStyleClasses:(NSArray *)appliedClasses transitionDuration:(NSTimeInterval)transitionDuration;
+
+@end
+
 @interface ViewController ()
 
 @property (nonatomic) IBOutlet MGLMapView *mapView;
@@ -104,13 +110,15 @@
         
         if (self.switchingThreshold > brightness)// && ![self.mapView hasStyleClass:@"dark"])
         {
-            [self.mapView removeStyleClass:@"dark"];
+            //[self.mapView removeStyleClass:@"dark"];
+            [self.mapView setStyleClasses:@[@"dark"] transitionDuration:0.2f];
             [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
             //NSLog(@"switch to dark (%@)", ([self.mapView hasStyleClass:@"dark"]) ? @"dark" : @"light");
         }
         else if (self.switchingThreshold <= brightness)// && [self.mapView hasStyleClass:@"dark"])
         {
-            [self.mapView addStyleClass:@"dark"];
+            //[self.mapView addStyleClass:@"dark"];
+            [self.mapView setStyleClasses:nil transitionDuration:0.2f];
             [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
             //NSLog(@"switch to light (%@)", ([self.mapView hasStyleClass:@"dark"]) ? @"dark" : @"light");
         }
