@@ -17,8 +17,8 @@
 @property (nonatomic) IBOutlet UISlider *thresholdSlider;
 @property (nonatomic) CGFloat switchingThreshold;
 @property (nonatomic) CALayer *brightnessIndicator;
-@property (nonatomic) NSURL *lightStyle;
-@property (nonatomic) NSURL *darkStyle;
+//@property (nonatomic) NSURL *lightStyle;
+//@property (nonatomic) NSURL *darkStyle;
 
 @end
 
@@ -36,8 +36,10 @@
 
     // ambient light map switching
     //
-    self.lightStyle = [NSURL URLWithString:@"asset://styles/light-v7.json"];
-    self.darkStyle = [NSURL URLWithString:@"asset://styles/dark-v7.json"];
+    //self.lightStyle = [NSURL URLWithString:@"asset://styles/light-v7.json"];
+    //self.darkStyle = [NSURL URLWithString:@"asset://styles/dark-v7.json"];
+    
+    self.mapView.styleURL = [NSURL URLWithString:@"asset://styles/lightdark-v7.json"];
     
     self.switchingThreshold = self.thresholdSlider.value;
     
@@ -100,16 +102,20 @@
     {
         CGFloat brightness = [[UIScreen mainScreen] brightness];
         
-        if (self.switchingThreshold > brightness && ![self.mapView.styleURL isEqual:self.darkStyle])
+        if (self.switchingThreshold > brightness)// && ![self.mapView hasStyleClass:@"dark"])
         {
-            self.mapView.styleURL = self.darkStyle;
+            [self.mapView removeStyleClass:@"dark"];
             [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+            //NSLog(@"switch to dark (%@)", ([self.mapView hasStyleClass:@"dark"]) ? @"dark" : @"light");
         }
-        else if (self.switchingThreshold <= brightness && ![self.mapView.styleURL isEqual:self.lightStyle])
+        else if (self.switchingThreshold <= brightness)// && [self.mapView hasStyleClass:@"dark"])
         {
-            self.mapView.styleURL = self.lightStyle;
+            [self.mapView addStyleClass:@"dark"];
             [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
+            //NSLog(@"switch to light (%@)", ([self.mapView hasStyleClass:@"dark"]) ? @"dark" : @"light");
         }
+        
+        //NSLog(@"fail to switch — %.2f, %@", brightness, ([self.mapView hasStyleClass:@"dark"]) ? @"dark" : @"light");
         
         // UIViewControllerBasedStatusBarAppearance must be set to NO in Info.plist for status bar styling to work
     }
