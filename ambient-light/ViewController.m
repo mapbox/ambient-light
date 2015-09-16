@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import <MapboxGL/MapboxGL.h>
+#import "Mapbox.h"
 
 @interface ViewController ()
 
@@ -36,8 +36,8 @@
 
     // ambient light map switching
     //
-    self.lightStyle = [NSURL URLWithString:@"asset://styles/light-v7.json"];
-    self.darkStyle = [NSURL URLWithString:@"asset://styles/dark-v7.json"];
+    self.lightStyle = [NSURL URLWithString:@"asset://styles/light-v8.json"];
+    self.darkStyle = [NSURL URLWithString:@"asset://styles/dark-v8.json"];
     
     self.switchingThreshold = self.thresholdSlider.value;
     
