@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		173E0BDBA60970782BD25469 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D1F00D82A16E758D095534 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		173E0BDBA60970782BD25469 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D1F00D82A16E758D095534 /* Pods.framework */; };
 		96992E7C1B111DF9008978C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96992E7B1B111DF9008978C0 /* main.m */; };
 		96992E7F1B111DF9008978C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96992E7E1B111DF9008978C0 /* AppDelegate.m */; };
 		96992E821B111DF9008978C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96992E811B111DF9008978C0 /* ViewController.m */; };
@@ -336,7 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "ambient-light/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -351,7 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "ambient-light/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
