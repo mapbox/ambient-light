@@ -135,7 +135,7 @@
 		96992E6E1B111DF9008978C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Mapbox;
 				TargetAttributes = {
 					96992E751B111DF9008978C0 = {
@@ -335,7 +335,6 @@
 			baseConfigurationReference = 6559C7E417564F41B2F28A79 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "ambient-light/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -350,7 +349,6 @@
 			baseConfigurationReference = EB850E4F95825D5A0FB04D8D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "ambient-light/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
