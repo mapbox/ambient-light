@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "Mapbox.h"
+@import Mapbox;
 
 @implementation AppDelegate
 
@@ -17,8 +17,11 @@
     // Setting the Mapbox access token can happen in one of several places:
     //   * AppDelegate (here)
     //   * Info.plist via the `MGLMapboxAccessToken` key
+    //
+    // See https://www.mapbox.com/help/create-api-access-token/ for more information about Mapbox access tokens.
+    //
     
-    [MGLAccountManager setAccessToken:@"<mapbox-access-token-here>"];
+    [MGLAccountManager setAccessToken:@"<#mapbox-access-token-here#>"];
 
     return YES;
 }
