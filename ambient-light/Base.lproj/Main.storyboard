@@ -63,7 +63,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Tsn-4o-vdt" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="0ny-68-eHA"/>
                             <constraint firstItem="Tsn-4o-vdt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZfA-cm-kFT"/>
