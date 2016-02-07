@@ -1,15 +1,15 @@
-# Ambient Light Mapbox GL iOS Demo
+# Ambient Light Mapbox iOS Demo
 
-A [Mapbox GL for iOS](https://github.com/mapbox/mapbox-gl-native) demo app that demonstrates ambient light-based map styling.
+[Mapbox iOS SDK](https://github.com/mapbox/mapbox-gl-native) demo app that demonstrates ambient light-based map styling.
 
 ![Would be nice to live in London, wouldn't it.](https://cloud.githubusercontent.com/assets/1198851/7792257/631d2a12-0264-11e5-82c8-0d8a942adaf8.png)
 
 ## Getting started
 
 1.  Clone or [download](https://github.com/friedbunny/ambient-light/archive/master.zip) this repository
-1. Run `pod install` to download the Mapbox GL library via [Cocoapods](https://cocoapods.org)
+1. Run `pod install` to download the Mapbox iOS SDK via [Cocoapods](https://cocoapods.org)
 1. Open `ambient-light.xcworkspace` in Xcode
-1. Insert your [Mapbox access token](https://www.mapbox.com/developers/api/#access-tokens) in [`AppDelegate.m`](https://github.com/friedbunny/ambient-light/blob/bc26fe94c05968c33eb5926c3b9148516ebebf96/ambient-light/AppDelegate.m#L21)
+1. Insert your [Mapbox access token](https://www.mapbox.com/help/create-api-access-token/) in [`AppDelegate.m`](blob/master/ambient-light/AppDelegate.m)
 1. Build amazing cartographic things
 
 ## Detecting ambient light
@@ -36,8 +36,8 @@ This does not really work in the simulator as brightness is hardcoded to 50%, bu
 
 ## Need help?
 
-If you haven’t already, read the [official project overview from Mapbox](https://www.mapbox.com/mapbox-gl-ios/) and have a look at the [API reference](https://www.mapbox.com/mapbox-gl-ios/api/). The [Mapbox tag on Stack Overflow](http://stackoverflow.com/questions/tagged/mapbox) is a great place to ask questions (that are often answered by Mapboxers). If you’re really stumped, Mapbox also offers [official support via email](https://www.mapbox.com/help/).
+If you haven’t already, read the [official project overview from Mapbox](https://www.mapbox.com/ios-sdk/) and have a look at the [API reference](https://www.mapbox.com/ios-sdk/api/). The [Mapbox tag on Stack Overflow](http://stackoverflow.com/questions/tagged/mapbox+ios) is a great place to ask questions (that are often answered by Mapboxers). If you’re really stumped, Mapbox also offers [official support via email](https://www.mapbox.com/help/).
 
 ## Found a bug?
 
-If you’ve found a bug in the Mapbox GL library, please take a bit to [report it at the main Mapbox GL Native project](https://github.com/mapbox/mapbox-gl-native/issues).
+If you’ve found a bug in the Mapbox iOS SDK, please take a bit to [report it on the project repo](https://github.com/mapbox/mapbox-gl-native/issues).
