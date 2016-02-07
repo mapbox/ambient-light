@@ -9,7 +9,7 @@
 1.  Clone or [download](https://github.com/friedbunny/ambient-light/archive/master.zip) this repository
 1. Run `pod install` to download the Mapbox iOS SDK via [Cocoapods](https://cocoapods.org)
 1. Open `ambient-light.xcworkspace` in Xcode
-1. Insert your [Mapbox access token](https://www.mapbox.com/help/create-api-access-token/) in [`AppDelegate.m`](blob/master/ambient-light/AppDelegate.m)
+1. Insert your [Mapbox access token](https://www.mapbox.com/help/create-api-access-token/) in [`AppDelegate.m`](ambient-light/AppDelegate.m)
 1. Build amazing cartographic things
 
 ## Detecting ambient light
