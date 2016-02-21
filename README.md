@@ -36,7 +36,7 @@ This does not really work in the simulator as brightness is hardcoded to 50%, bu
 
 ## Need help?
 
-If you haven’t already, read the [official project overview from Mapbox](https://www.mapbox.com/ios-sdk/) and have a look at the [API reference](https://www.mapbox.com/ios-sdk/api/). The [Mapbox tag on Stack Overflow](http://stackoverflow.com/questions/tagged/mapbox+ios) is a great place to ask questions (that are often answered by Mapboxers). If you’re really stumped, Mapbox also offers [official support via email](https://www.mapbox.com/help/).
+If you haven’t already, read the [official project overview from Mapbox](https://www.mapbox.com/ios-sdk/) and have a look at the [API reference](https://www.mapbox.com/ios-sdk/api/). The [Mapbox tag on Stack Overflow](http://stackoverflow.com/questions/tagged/mapbox+ios) is a great place to ask questions (that are often answered by Mapboxers). Mapbox also offers [tons of help resources](https://www.mapbox.com/help/).
 
 ## Found a bug?
 
