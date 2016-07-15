@@ -36,8 +36,8 @@
 
     // ambient light map switching
     //
-    self.lightStyle = [MGLStyle lightStyleURL];
-    self.darkStyle = [MGLStyle darkStyleURL];
+    self.lightStyle = [MGLStyle lightStyleURLWithVersion:9];
+    self.darkStyle = [MGLStyle darkStyleURLWithVersion:9];
     
     self.switchingThreshold = self.thresholdSlider.value;
     
