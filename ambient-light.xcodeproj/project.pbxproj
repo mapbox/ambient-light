@@ -15,7 +15,6 @@
 		96BAF2661B111FB60085B879 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96BAF2651B111FB60085B879 /* Settings.bundle */; };
 		96BAF26C1B112DCA0085B879 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BAF26B1B112DCA0085B879 /* Images.xcassets */; };
 		96BAF26E1B112FFC0085B879 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96BAF26D1B112FFC0085B879 /* LaunchScreen.xib */; };
-		A4BA4B212B8E0EE6A4787E19 /* libPods-Ambient Light.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C5F58BF77E9A2BE342231F /* libPods-Ambient Light.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,7 @@
 		5F35264895921262843EF633 /* Pods-Ambient Light.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ambient Light.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ambient Light/Pods-Ambient Light.debug.xcconfig"; sourceTree = "<group>"; };
 		88B7DD89AA10637846E1A344 /* Pods-Ambient Light.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ambient Light.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ambient Light/Pods-Ambient Light.release.xcconfig"; sourceTree = "<group>"; };
 		94960F139DCA5374C8A53E8A /* libPods-ambient-light.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ambient-light.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96992E761B111DF9008978C0 /* Ambient Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Ambient Light.app"; path = "ambient-light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96992E761B111DF9008978C0 /* ambient-light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ambient-light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96992E7A1B111DF9008978C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96992E7B1B111DF9008978C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96992E7D1B111DF9008978C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4BA4B212B8E0EE6A4787E19 /* libPods-Ambient Light.a in Frameworks */,
 				34F71EC1010C97CEB0D25CC2 /* libPods-ambient-light.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +74,7 @@
 		96992E771B111DF9008978C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96992E761B111DF9008978C0 /* Ambient Light.app */,
+				96992E761B111DF9008978C0 /* ambient-light.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +134,7 @@
 			);
 			name = "ambient-light";
 			productName = "ambient-light";
-			productReference = 96992E761B111DF9008978C0 /* Ambient Light.app */;
+			productReference = 96992E761B111DF9008978C0 /* ambient-light.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
