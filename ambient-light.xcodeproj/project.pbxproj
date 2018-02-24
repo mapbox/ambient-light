@@ -191,8 +191,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ambient-light/Pods-ambient-light-frameworks.sh",
-				"${PODS_ROOT}/Mapbox-iOS-SDK-symbols/dynamic/Mapbox.framework",
-				"${PODS_ROOT}/Mapbox-iOS-SDK-symbols/dynamic/Mapbox.framework.dSYM",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
