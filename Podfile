@@ -1,6 +1,5 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 target 'ambient-light' do
-  pod 'Mapbox-iOS-SDK', '~> 3.7.5'
-  #pod 'Mapbox-iOS-SDK-symbols', :podspec => 'https://raw.githubusercontent.com/mapbox/mapbox-gl-native/ios-v3.7.0-beta.2/platform/ios/Mapbox-iOS-SDK-symbols.podspec'
+  pod 'Mapbox-iOS-SDK', '~> 4.7.0'
 end

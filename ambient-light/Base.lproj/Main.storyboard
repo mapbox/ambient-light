@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,19 +18,19 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsn-4o-vdt" customClass="MGLMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-UD-2g5">
-                                        <rect key="frame" x="8" y="478" width="584" height="78"/>
+                                        <rect key="frame" x="8" y="740" width="398" height="78"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w76-J7-pnY">
-                                                <rect key="frame" x="56" y="24" width="472" height="31"/>
-                                                <color key="minimumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="56" y="24" width="286" height="31"/>
+                                                <color key="minimumTrackTintColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="thresholdSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Yr-R2-8EB"/>
                                                 </connections>
@@ -39,10 +42,10 @@
                                                 </accessibility>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Light" translatesAutoresizingMaskIntoConstraints="NO" id="2cc-vz-rZn">
-                                                <rect key="frame" x="534" y="14" width="50" height="50"/>
+                                                <rect key="frame" x="348" y="14" width="50" height="50"/>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="w76-J7-pnY" firstAttribute="centerY" secondItem="B9B-7x-rax" secondAttribute="centerY" id="C4i-Oo-ILn"/>
                                             <constraint firstItem="w76-J7-pnY" firstAttribute="leading" secondItem="B9B-7x-rax" secondAttribute="trailing" constant="8" symbolic="YES" id="HH4-7L-Y3X"/>
@@ -55,17 +58,17 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="SWw-UD-2g5" firstAttribute="leading" secondItem="Tsn-4o-vdt" secondAttribute="leadingMargin" id="PMc-ve-dCJ"/>
                                     <constraint firstItem="SWw-UD-2g5" firstAttribute="trailing" secondItem="Tsn-4o-vdt" secondAttribute="trailingMargin" id="WcY-EG-p1j"/>
-                                    <constraint firstAttribute="bottom" secondItem="SWw-UD-2g5" secondAttribute="bottom" constant="44" id="oCu-1W-N7D"/>
+                                    <constraint firstAttribute="bottom" secondItem="SWw-UD-2g5" secondAttribute="bottom" constant="78" id="oCu-1W-N7D"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Tsn-4o-vdt" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="0ny-68-eHA"/>
+                            <constraint firstItem="Tsn-4o-vdt" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="34" id="0ny-68-eHA"/>
                             <constraint firstItem="Tsn-4o-vdt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZfA-cm-kFT"/>
                             <constraint firstItem="Tsn-4o-vdt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pTe-w6-fYJ"/>
                             <constraint firstAttribute="trailing" secondItem="Tsn-4o-vdt" secondAttribute="trailing" id="rSc-37-X8B"/>
@@ -78,6 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="132.58928571428572"/>
         </scene>
     </scenes>
     <resources>

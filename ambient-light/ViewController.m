@@ -36,8 +36,8 @@
 
     // ambient light map switching
     //
-    self.lightStyle = [MGLStyle lightStyleURLWithVersion:9];
-    self.darkStyle = [MGLStyle darkStyleURLWithVersion:9];
+    self.lightStyle = [MGLStyle lightStyleURLWithVersion:10];
+    self.darkStyle = [MGLStyle darkStyleURLWithVersion:10];
     
     self.switchingThreshold = self.thresholdSlider.value;
     
@@ -81,6 +81,11 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return [self.mapView.styleURL isEqual:self.darkStyle] ? UIStatusBarStyleLightContent : UIStatusBarStyleDefault;
+}
+
 - (IBAction)thresholdSliderChanged:(UISlider *)sender
 {
     self.switchingThreshold = sender.value;
@@ -96,22 +101,20 @@
 - (void)updateMapStyleForScreenBrightness
 {
     // map style changes need to happen in the foreground, otherwise the GL view will hang
-    if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive)
+    if (UIApplication.sharedApplication.applicationState == UIApplicationStateActive)
     {
         CGFloat brightness = [[UIScreen mainScreen] brightness];
         
         if (self.switchingThreshold > brightness && ![self.mapView.styleURL isEqual:self.darkStyle])
         {
             self.mapView.styleURL = self.darkStyle;
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+            [self setNeedsStatusBarAppearanceUpdate];
         }
         else if (self.switchingThreshold <= brightness && ![self.mapView.styleURL isEqual:self.lightStyle])
         {
             self.mapView.styleURL = self.lightStyle;
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
+            [self setNeedsStatusBarAppearanceUpdate];
         }
-        
-        // UIViewControllerBasedStatusBarAppearance must be set to NO in Info.plist for status bar styling to work
     }
 }
 
